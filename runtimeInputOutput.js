@@ -29,7 +29,6 @@ function evaluateAnswer(answer) {
         rl.close()
     } else {
         let dir = myNumber > answer ? "My number is larger" : "My number is smaler";
-        readline.clearScreenDown();
         rl.write("Wrong\n")
         askQuestion(`${dir}. Guess again\n`);
     }
